@@ -36,7 +36,9 @@ namespace Deals3000.Models
                 if (_UIImage == value){
                     return;
                 }
+                var oldImage = _UIImage;
                 _UIImage = value;
+                OnProductUIImageChanged(new ProductImageChangedEventArgs(oldImage, value));
 
             } 
         }

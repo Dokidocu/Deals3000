@@ -16,11 +16,20 @@ namespace Deals3000.iOS
         [Outlet]
         UIKit.UIButton Button { get; set; }
 
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView ImageView { get; set; }
+
         void ReleaseDesignerOutlets ()
         {
             if (Button != null) {
                 Button.Dispose ();
                 Button = null;
+            }
+
+            if (ImageView != null) {
+                ImageView.Dispose ();
+                ImageView = null;
             }
         }
     }

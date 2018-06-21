@@ -37,7 +37,6 @@ namespace Deals3000
                     NSData data = NSData.FromArray(bytes);
                     Console.WriteLine($"---- > {data == null}");
                     UIImage image = UIImage.LoadFromData(data);
-                    Console.WriteLine($"IMAGE ---- > {image == null}");
                     product.ProductUIImage = UIImage.LoadFromData(data);
                 };
                 webClient.DownloadDataAsync(url);

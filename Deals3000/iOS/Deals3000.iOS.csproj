@@ -97,7 +97,6 @@
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="ViewControllers\ProductViewCell.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -116,10 +115,8 @@
       <DependentUpon>ProductsTableViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="ViewControllers\ProductViewCell.cs" />
-    <Compile Include="ViewControllers\ProductViewCell.designer.cs">
-      <DependentUpon>ProductViewCell.cs</DependentUpon>
-    </Compile>
     <Compile Include="Helpers\Product+Image.cs" />
+    <Compile Include="ViewControllers\GenericTableViewController.cs" />
   </ItemGroup>
   <Import Project="..\Deals3000.projitems" Label="Shared" Condition="Exists('..\Deals3000.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
